@@ -40,6 +40,16 @@ class UserManagementHelper {
         })
     }
 
+    class func retrieveUser(email: String, completion: (result: PFUser?) -> Void) {
+        let query = PFUser.query()
+        query?.whereKey("email", equalTo: email)
+
+        query?.findObjectsInBackgroundWithBlock({ (objects: [PFObject]?, error: NSError?) -> Void in
+            let obj = objects?.first as! PFUser
+            completion(result: obj)
+        })
+    }
+    
     class func checkForEmptyTextFields(fields: [UITextField], completion: (result: Bool) -> Void) {
         var isEntered = true
         for field in fields {

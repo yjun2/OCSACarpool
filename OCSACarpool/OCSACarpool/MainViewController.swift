@@ -38,6 +38,59 @@ class MainViewController: UIViewController {
 
     }
 
+    @IBAction func createGroup(sender: UIButton) {
+        
+        let name = "Test Carpool Group"
+        
+        // check for duplicate group name
+        GroupManagementHelper.isGroupAlreadyExist(name) { (result) -> Void in
+            if result {  // group name already exists
+                let alert = UserManagementHelper.displayAlertWithTitle("Error", message: "Group name '\(name)' already exists")
+                self.presentViewController(alert, animated: true, completion: nil)
+            } else {
+                let group = CarpoolGroup(groupName: name)
+                group.saveToParse()
+            }
+        }
+        
+    }
+    
+    @IBAction func retrieveGroup(sender: UIButton) {
+        // testing purpose
+        CarpoolGroup.retrieveGroup("Test Carpool Group") { (group: CarpoolGroup?) -> Void in
+            if let g = group {
+                print("group name: \(g.groupName)")
+                
+                let val = g.creator.username!
+                print("creator: \(val)")
+                for member in g.members {
+                    print("member: \(member.username!)")
+                }
+            } else {
+                print("group not found")
+            }
+        }
+        
+    }
+    
+    
+    @IBAction func invite(sender: UIButton) {
+        // testing purpose
+        let name = "Test Carpool Group"
+        
+        UserManagementHelper.retrieveUser("yongjun@gmail.com") { (result: PFUser?) -> Void in
+            if let user = result {
+                CarpoolGroup.addUserToGroupMemberList(name, user: user) { (success) -> Void in
+                    if success {
+                        print("updated successfully")
+                    } else {
+                        print("did not get updated")
+                    }
+                }
+            }
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

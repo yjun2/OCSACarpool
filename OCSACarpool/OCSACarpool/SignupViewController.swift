@@ -16,12 +16,14 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var passwordTxtField: UITextField!
     @IBOutlet weak var confirmPasswordTxtField: UITextField!
     
-    var fieldsArray = [UITextField]()
     var keyboardHandler: IQKeyboardReturnKeyHandler!
+    
+    lazy var fieldsArray: [UITextField] = {
+        return [self.emailTxtField, self.firstnameTxtField, self.lastnameTxtField, self.passwordTxtField, self.confirmPasswordTxtField]
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fieldsArray = [emailTxtField, firstnameTxtField, lastnameTxtField, passwordTxtField, confirmPasswordTxtField]
         keyboardHandler = IQKeyboardReturnKeyHandler(controller: self)
     }
 
@@ -46,7 +48,6 @@ class SignupViewController: UIViewController {
                 let alert = UserManagementHelper.displayAlertWithTitle("Error", message: "All fields are required")
                 self.presentViewController(alert, animated: true, completion: nil)
             } else {
-                print("am i here: \(result)")
                 // check email address
                 if UserManagementHelper.verifyEmailAddress(self.emailTxtField.text!) == false {
                     let alert = UserManagementHelper.displayAlertWithTitle("Error", message: "Email address is not valid.  Re-enter your email address")

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E03F39E1BC4E95A00AC641D /* GroupManagementHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E03F39D1BC4E95A00AC641D /* GroupManagementHelper.swift */; settings = {ASSET_TAGS = (); }; };
 		2E1C6E441BB37D6D00732D5C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1C6E431BB37D6D00732D5C /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		2E1C6E491BB37DE100732D5C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1C6E461BB37DE100732D5C /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
 		2E1C6E4A1BB37DE100732D5C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1C6E471BB37DE100732D5C /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
@@ -23,6 +24,7 @@
 		2E1C6E5F1BB37E9F00732D5C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1C6E5E1BB37E9F00732D5C /* libsqlite3.tbd */; };
 		2E1C6E651BB37F9600732D5C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1C6E641BB37F9600732D5C /* MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		2E1C6E691BB3B0C800732D5C /* cancel-solid-icon-614x460.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E1C6E681BB3B0C800732D5C /* cancel-solid-icon-614x460.png */; settings = {ASSET_TAGS = (); }; };
+		2E897E4B1BC3749D0010EDB6 /* CarpoolGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E897E4A1BC3749D0010EDB6 /* CarpoolGroup.swift */; settings = {ASSET_TAGS = (); }; };
 		2EBB5CC21BB6579B00A99079 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBB5CAF1BB6579B00A99079 /* IQNSArray+Sort.swift */; settings = {ASSET_TAGS = (); }; };
 		2EBB5CC31BB6579B00A99079 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBB5CB01BB6579B00A99079 /* IQUITextFieldView+Additions.swift */; settings = {ASSET_TAGS = (); }; };
 		2EBB5CC41BB6579B00A99079 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBB5CB11BB6579B00A99079 /* IQUIView+Hierarchy.swift */; settings = {ASSET_TAGS = (); }; };
@@ -67,6 +69,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E03F39D1BC4E95A00AC641D /* GroupManagementHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupManagementHelper.swift; sourceTree = "<group>"; };
 		2E1C6E431BB37D6D00732D5C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2E1C6E461BB37DE100732D5C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		2E1C6E471BB37DE100732D5C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -84,6 +87,7 @@
 		2E1C6E601BB37ECB00732D5C /* OCSACarpool-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCSACarpool-Bridging-Header.h"; sourceTree = "<group>"; };
 		2E1C6E641BB37F9600732D5C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2E1C6E681BB3B0C800732D5C /* cancel-solid-icon-614x460.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel-solid-icon-614x460.png"; sourceTree = "<group>"; };
+		2E897E4A1BC3749D0010EDB6 /* CarpoolGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarpoolGroup.swift; sourceTree = "<group>"; };
 		2EBB5CAF1BB6579B00A99079 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
 		2EBB5CB01BB6579B00A99079 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
 		2EBB5CB11BB6579B00A99079 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
@@ -174,6 +178,22 @@
 			name = Framework;
 			sourceTree = "<group>";
 		};
+		2E3108961BC77654001D8A4C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2EC00F431BB1077B001947A5 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		2E897E491BC374520010EDB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E897E4A1BC3749D0010EDB6 /* CarpoolGroup.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		2EBB5CAD1BB6579B00A99079 /* IQKeyboardManagerSwift */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				2EBB5CD21BB661AC00A99079 /* UserManagementHelper.swift */,
+				2E03F39D1BC4E95A00AC641D /* GroupManagementHelper.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -267,13 +288,14 @@
 		2EC00F3E1BB1077B001947A5 /* OCSACarpool */ = {
 			isa = PBXGroup;
 			children = (
+				2E3108961BC77654001D8A4C /* Storyboards */,
+				2E897E491BC374520010EDB6 /* Model */,
 				2EBB5CAD1BB6579B00A99079 /* IQKeyboardManagerSwift */,
 				2E1C6E451BB37DB600732D5C /* Framework */,
 				2EC00F6D1BB107FC001947A5 /* Images */,
 				2EBB5CD11BB6616100A99079 /* Util */,
 				2EC00F701BB11531001947A5 /* Controllers */,
 				2EC00F3F1BB1077B001947A5 /* AppDelegate.swift */,
-				2EC00F431BB1077B001947A5 /* Main.storyboard */,
 				2EC00F461BB1077B001947A5 /* Assets.xcassets */,
 				2EC00F481BB1077B001947A5 /* LaunchScreen.storyboard */,
 				2EC00F4B1BB1077B001947A5 /* Info.plist */,
@@ -455,6 +477,7 @@
 			files = (
 				2EBB5CCF1BB6579B00A99079 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
 				2EBB5CCA1BB6579B00A99079 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				2E897E4B1BC3749D0010EDB6 /* CarpoolGroup.swift in Sources */,
 				2EBB5CCD1BB6579B00A99079 /* IQTitleBarButtonItem.swift in Sources */,
 				2EBB5CC91BB6579B00A99079 /* IQKeyboardManager.swift in Sources */,
 				2E1C6E441BB37D6D00732D5C /* LoginViewController.swift in Sources */,
@@ -467,6 +490,7 @@
 				2EBB5CC41BB6579B00A99079 /* IQUIView+Hierarchy.swift in Sources */,
 				2EBB5CCE1BB6579B00A99079 /* IQToolbar.swift in Sources */,
 				2EBB5CCC1BB6579B00A99079 /* IQBarButtonItem.swift in Sources */,
+				2E03F39E1BC4E95A00AC641D /* GroupManagementHelper.swift in Sources */,
 				2EC00F401BB1077B001947A5 /* AppDelegate.swift in Sources */,
 				2EBB5CC51BB6579B00A99079 /* IQUIViewController+Additions.swift in Sources */,
 				2EBB5CC71BB6579B00A99079 /* IQKeyboardManagerConstants.swift in Sources */,

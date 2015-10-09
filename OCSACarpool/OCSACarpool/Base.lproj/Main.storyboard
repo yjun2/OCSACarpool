@@ -265,6 +265,27 @@
                                     <action selector="logout:" destination="H0e-3c-Ane" eventType="touchUpInside" id="WGf-Dd-vZY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPG-xv-586">
+                                <rect key="frame" x="161" y="320" width="102" height="30"/>
+                                <state key="normal" title="Create a group"/>
+                                <connections>
+                                    <action selector="createGroup:" destination="H0e-3c-Ane" eventType="touchUpInside" id="3oq-gK-rC6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWF-Fg-KSg">
+                                <rect key="frame" x="162" y="366" width="101" height="30"/>
+                                <state key="normal" title="Retrieve group"/>
+                                <connections>
+                                    <action selector="retrieveGroup:" destination="H0e-3c-Ane" eventType="touchUpInside" id="MV0-jq-zlN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0le-Hv-U13">
+                                <rect key="frame" x="146" y="417" width="133" height="30"/>
+                                <state key="normal" title="Invite user to group"/>
+                                <connections>
+                                    <action selector="invite:" destination="H0e-3c-Ane" eventType="touchUpInside" id="fdv-wJ-mz4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
